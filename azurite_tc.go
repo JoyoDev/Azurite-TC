@@ -149,7 +149,7 @@ func (ac *AzuriteTC) UpdateTableValue(tableName, partitionKey, rowKey, value str
 }
 
 // Retrieve value from table
-func (az *AzuriteTC) GetTablevalue(tableName, partitionKey, rowKey string) (string, error) {
+func (az *AzuriteTC) GetTableValue(tableName, partitionKey, rowKey string) (string, error) {
 	client, err := storage.NewBasicClient(az.storageAccountName, az.storageAccountAccessToken)
 
 	if err != nil {

@@ -1,4 +1,4 @@
-module github.com/JoyoDev/azurite-tc
+module github.com/joyodev/azurite-tc
 
 go 1.17
 
