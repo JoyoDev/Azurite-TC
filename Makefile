@@ -1,2 +1,2 @@
 test:
-	go test -timeout 5000s
+	go test ./... -timeout 5000s
