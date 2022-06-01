@@ -8,8 +8,9 @@ import (
 
 func main() {
 
+	// default credentials for testing
 	azuriteTC := atc.NewAzuriteTC("devstoreaccount1", "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==")
-	
+
 	// create container
 	azuriteTC.RunAzuriteContainer()
 
