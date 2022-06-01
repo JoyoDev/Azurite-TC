@@ -1,4 +1,4 @@
-name: Go
+name: CI
 
 on:
   push:
@@ -6,9 +6,8 @@ on:
   pull_request:
     branches: [ main ]
 
-jobs:
-
-  docker:
+jobs:        
+  ci:
     runs-on: ubuntu-latest
     steps:
     - uses: docker-practice/actions-setup-docker@master
@@ -17,9 +16,6 @@ jobs:
 
         docker version
         
-  build:
-    runs-on: ubuntu-latest
-    steps:
     - uses: actions/checkout@v3
 
     - name: Set up Go
